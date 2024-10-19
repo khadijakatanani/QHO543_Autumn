@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Khadija
+ * @author Khadijaaa
  */
 public class Week1 {
 
