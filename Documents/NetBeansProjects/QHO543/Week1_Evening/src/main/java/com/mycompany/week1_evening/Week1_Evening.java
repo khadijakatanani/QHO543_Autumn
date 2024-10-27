@@ -50,6 +50,7 @@ public class Week1_Evening {
         while (i < 11) {
             System.out.println("Square of number " + i + " is " + i * i);
             i++;
+            
         }
     
     
