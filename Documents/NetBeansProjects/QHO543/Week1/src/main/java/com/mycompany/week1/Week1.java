@@ -5,6 +5,7 @@
 package com.mycompany.week1;
 import java.util.Scanner;
 
+
 /**
  *
  * @author Khadijaaa
