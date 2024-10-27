@@ -2,7 +2,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 package com.mycompany.week2_evening;
-
 import java.util.HashSet;
 import java.util.Set;
 
