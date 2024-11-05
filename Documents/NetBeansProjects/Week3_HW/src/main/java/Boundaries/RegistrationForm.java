@@ -3,8 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Boundaries;
-import Controllers.RegistrationController;
+import Controllers.RegistrationManager;
+import Controllers.SessionManager;
 import Entities.User;
+import Entities.UserRepository;
 import java.util.Scanner;
 /**
  *
@@ -12,18 +14,22 @@ import java.util.Scanner;
  */
 
 public class RegistrationForm {
-    private RegistrationController registrationcontroller = new RegistrationController();
+    private RegistrationManager registrationmanager = new RegistrationManager();
 
     public boolean registerUser() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter username: ");
-        String username = scanner.nextLine();
+        String username = scanner.nextLine();       
         System.out.print("Enter email: ");
         String email = scanner.nextLine();
         System.out.print("Enter password: ");
         String password = scanner.nextLine();
 
-        return registrationcontroller.register(username, email, password);
+        return registrationmanager.register(username, email, password);
+    }
+    
+    public boolean isLoggedIn() {
+        return registrationmanager.isLoggedIn();
     }
 }

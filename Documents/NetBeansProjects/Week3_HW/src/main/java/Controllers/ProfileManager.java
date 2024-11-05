@@ -8,6 +8,6 @@ package Controllers;
  *
  * @author Admin
  */
-public class PasswordResetController {
+public class ProfileManager {
     
 }

@@ -11,7 +11,7 @@ import Entities.User;
  *
  * @author Admin
  */
-public class RegistrationController {
+public class RegistrationManager {
 
     public boolean register(String username, String email, String password) {
         if (UserRepository.userExists(username)) {
@@ -21,5 +21,9 @@ public class RegistrationController {
         User newUser = new User(username, email, password);
         UserRepository.addUser(newUser);
         return true;
+    }
+
+    public boolean isLoggedIn() {
+        return SessionManager.isLoggedIn();
     }
 }
