@@ -1,0 +1,8 @@
+
+// ${pageContext.request.contextPath}/servletName
+
+<button type="submit>">Press Here</button> 
+// Redirect to the same JSP page
+   response.sendRedirect(request.getContextPath() + "/yourPage.jsp");
+
+
